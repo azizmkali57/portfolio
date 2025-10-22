@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('back2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* Navbar */
+#navb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#navb .logo {
+    height: 70px;
+    width: auto;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: cornflowerblue;
+    transform: scale(1.1);
+}
+
+/* Page Title */
+#name1 {
+    font-size: 50px;
+    text-align: center;
+    color: #FF8C00;
+    margin: 40px 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Project Box */
+.box1 {
+    background: rgba(255, 255, 255, 0.9);
+    color: #222;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.box1 a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    transition: color 0.3s;
+}
+
+.box1:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 1);
+}
+
+.box1:hover a {
+    color: cornflowerblue;
+}
+
+.box1 img{
+     width: 250px;
+     height: 100px;
+}
